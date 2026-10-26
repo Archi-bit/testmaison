@@ -3,5 +3,5 @@ from .models import Catalog
 
 
 @admin.register(Catalog)
-class CatalogAdmin(admin.ModelAdmin):
+class MenuAdmin(admin.ModelAdmin):
     list_display = ('title')
