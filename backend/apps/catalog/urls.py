@@ -3,7 +3,7 @@ from .views import CatalogViewset
 from rest_framework.routers import SimpleRouter
 
 
-router = SimpleRouter
+router = SimpleRouter()
 router.register('catalog', CatalogViewset, basename='catalog')
 
 urlpatterns = [
