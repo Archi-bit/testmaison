@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Catalog
+from .serializers import CatalogSerializer
 
-# Create your views here.
+
+
+class CatalogViewset(viewsets.ModelViewSet):
+    model = Catalog
+    serializer_class = CatalogSerializer
