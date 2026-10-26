@@ -4,4 +4,4 @@ from .models import Catalog
 
 @admin.register(Catalog)
 class MenuAdmin(admin.ModelAdmin):
-    list_display = ('title')
+    list_display = ('title', )
