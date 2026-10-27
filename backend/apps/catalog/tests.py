@@ -1,3 +1,4 @@
 from django.test import TestCase
+import secrets
 
-# Create your tests here.
+print(secrets.token_urlsafe(32))
